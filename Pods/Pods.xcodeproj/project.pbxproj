@@ -27,13 +27,13 @@
 		01638425F5228E17DA6C2EC2ADF27F12 /* Pods-DistCalApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DistCalApp.release.xcconfig"; sourceTree = "<group>"; };
 		208DA4B4759260ACC485B281ED815A79 /* Pods-DistCalApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DistCalApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		26F7CA70B8D59FC6BA6ABC8DD1E2D676 /* DGDistanceRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGDistanceRequest.h; path = Pod/Classes/DGDistanceRequest.h; sourceTree = "<group>"; };
-		30338E8D94180DA4FC3602D9B3BFF268 /* DistanceGetter */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = DistanceGetter; path = libDistanceGetter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		30338E8D94180DA4FC3602D9B3BFF268 /* libDistanceGetter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDistanceGetter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F54E1CE1B428A77F31A9D3F129A0AD9 /* DGDistanceRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGDistanceRequest.m; path = Pod/Classes/DGDistanceRequest.m; sourceTree = "<group>"; };
 		4C86690E3A5E59763240D014193F2553 /* DistanceGetter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DistanceGetter-prefix.pch"; sourceTree = "<group>"; };
 		61AECD58D04CE15BE3A505F981F7D71A /* Pods-DistCalApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DistCalApp-dummy.m"; sourceTree = "<group>"; };
 		666AC745A861A0DC20469C83DEAA8EBA /* DistanceGetter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DistanceGetter-dummy.m"; sourceTree = "<group>"; };
 		80241B151DF4C08AC28A085B990044CE /* DistanceGetter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DistanceGetter.debug.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F1AFC662939D4E04C615725F898212B /* Pods-DistCalApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DistCalApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A0FFB983BC008C43B578FB7629D7FB48 /* DistanceGetter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DistanceGetter.release.xcconfig; sourceTree = "<group>"; };
 		DE2ADEECBC83CCAEC636A6470EC9BD61 /* Pods-DistCalApp */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-DistCalApp"; path = "libPods-DistCalApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +65,6 @@
 				3F54E1CE1B428A77F31A9D3F129A0AD9 /* DGDistanceRequest.m */,
 				FBDB6D6A25C16D505922447D818CF588 /* Support Files */,
 			);
-			name = DistanceGetter;
 			path = DistanceGetter;
 			sourceTree = "<group>";
 		};
@@ -88,7 +87,7 @@
 		7432160E5EEDD513491F47278318BA09 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				30338E8D94180DA4FC3602D9B3BFF268 /* DistanceGetter */,
+				30338E8D94180DA4FC3602D9B3BFF268 /* libDistanceGetter.a */,
 				DE2ADEECBC83CCAEC636A6470EC9BD61 /* Pods-DistCalApp */,
 			);
 			name = Products;
@@ -190,7 +189,7 @@
 			);
 			name = DistanceGetter;
 			productName = DistanceGetter;
-			productReference = 30338E8D94180DA4FC3602D9B3BFF268 /* DistanceGetter */;
+			productReference = 30338E8D94180DA4FC3602D9B3BFF268 /* libDistanceGetter.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -326,7 +325,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/DistanceGetter/DistanceGetter-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -370,7 +369,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/DistanceGetter/DistanceGetter-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";

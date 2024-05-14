@@ -14,9 +14,11 @@
 		1E7A5BA22BF3573D00E281FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E7A5BA12BF3573D00E281FB /* Assets.xcassets */; };
 		1E7A5BA52BF3573D00E281FB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1E7A5BA42BF3573D00E281FB /* Base */; };
 		1E7A5BA82BF3573D00E281FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7A5BA72BF3573D00E281FB /* main.m */; };
+		26B1D3E5AEAF0AB0391813A4 /* libPods-DistCalApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93538262DDAFD121DB222FA5 /* libPods-DistCalApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		012D9273555B0BB977930A86 /* Pods-DistCalApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistCalApp.debug.xcconfig"; path = "Target Support Files/Pods-DistCalApp/Pods-DistCalApp.debug.xcconfig"; sourceTree = "<group>"; };
 		1E7A5B922BF3573A00E281FB /* DistCalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DistCalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7A5B952BF3573A00E281FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1E7A5B962BF3573A00E281FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		1E7A5BA42BF3573D00E281FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E7A5BA62BF3573D00E281FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E7A5BA72BF3573D00E281FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93538262DDAFD121DB222FA5 /* libPods-DistCalApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DistCalApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6B89167CD1088D8724DBEE /* Pods-DistCalApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DistCalApp.release.xcconfig"; path = "Target Support Files/Pods-DistCalApp/Pods-DistCalApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26B1D3E5AEAF0AB0391813A4 /* libPods-DistCalApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,8 @@
 			children = (
 				1E7A5B942BF3573A00E281FB /* DistCalApp */,
 				1E7A5B932BF3573A00E281FB /* Products */,
+				FF3CF26AB999D181D6F8C182 /* Pods */,
+				6C623B9CC635F4C20D24402B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,24 @@
 			path = DistCalApp;
 			sourceTree = "<group>";
 		};
+		6C623B9CC635F4C20D24402B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93538262DDAFD121DB222FA5 /* libPods-DistCalApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF3CF26AB999D181D6F8C182 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				012D9273555B0BB977930A86 /* Pods-DistCalApp.debug.xcconfig */,
+				DC6B89167CD1088D8724DBEE /* Pods-DistCalApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +108,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E7A5BAB2BF3573D00E281FB /* Build configuration list for PBXNativeTarget "DistCalApp" */;
 			buildPhases = (
+				F3DFF984333F08CAA2159659 /* [CP] Check Pods Manifest.lock */,
 				1E7A5B8E2BF3573A00E281FB /* Sources */,
 				1E7A5B8F2BF3573A00E281FB /* Frameworks */,
 				1E7A5B902BF3573A00E281FB /* Resources */,
@@ -140,6 +166,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F3DFF984333F08CAA2159659 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DistCalApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1E7A5B8E2BF3573A00E281FB /* Sources */ = {
@@ -293,6 +344,7 @@
 		};
 		1E7A5BAC2BF3573D00E281FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 012D9273555B0BB977930A86 /* Pods-DistCalApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,6 +372,7 @@
 		};
 		1E7A5BAD2BF3573D00E281FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC6B89167CD1088D8724DBEE /* Pods-DistCalApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "DistanceGetter/DGDistanceRequest.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *startLocation;

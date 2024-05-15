@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
 
 @property (weak, nonatomic) IBOutlet UIButton *calculateButton;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *unitController;
 
 @end
 
@@ -47,9 +48,20 @@
         NSNull *badResult = [NSNull null];
         
         if (response[0] != badResult) {
-            double num = ([response[0] floatValue] / 1000.0);
-            NSString *x = [NSString stringWithFormat:@"%.2f km", num];
-            strongSelf.distanceLabel.text = x;
+            double num ;
+            if (strongSelf.unitController.selectedSegmentIndex == 0) {
+                num = ([response[0] floatValue] / 1.0);
+                NSString *x = [NSString stringWithFormat:@"%.2f m", num];
+                strongSelf.distanceLabel.text = x;
+            } else if (strongSelf.unitController.selectedSegmentIndex == 1){
+                num = ([response[0] floatValue] / 1000.0);
+                NSString *x = [NSString stringWithFormat:@"%.2f km", num];
+                strongSelf.distanceLabel.text = x;
+            } else {
+                num = ([response[0] floatValue] / 1609.34);
+                NSString *x = [NSString stringWithFormat:@"%.2f miles", num];
+                strongSelf.distanceLabel.text = x;
+            }
         } else {
             strongSelf.distanceLabel.text = @"Error!";
         }

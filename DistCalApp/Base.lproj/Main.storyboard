@@ -131,6 +131,7 @@
                         <outlet property="distanceLabel" destination="brU-Te-Tjt" id="1Ai-a2-KLc"/>
                         <outlet property="endLocation" destination="BuR-gB-yxq" id="5x2-Ey-cyL"/>
                         <outlet property="startLocation" destination="SFP-db-7GH" id="BbY-Kf-npY"/>
+                        <outlet property="unitController" destination="tSC-mL-waD" id="6vK-1x-Ku6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

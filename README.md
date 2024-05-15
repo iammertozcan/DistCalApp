@@ -9,9 +9,10 @@ DistCalApp is an application used for performing long-distance computation tasks
 
 ## Screenshots
 <div style="display: flex; justify-content: space-around;">
-    <img src="./images/launchScreen.png" alt="Launch Screen" style="width: 32%;">
-    <img src="./images/homeScreen.png" alt="Home Screen" style="width: 32%;">
-    <img src="./images/usage.png" alt="Usage" style="width: 32%;">
+    <img src="./images/launchScreen.png" alt="Launch Screen" style="width: 25%;">
+    <img src="./images/homeScreen.png" alt="Home Screen" style="width: 25%;">
+    <img src="./images/usage.png" alt="Usage" style="width: 25%;">
+    <img src="./images/usageGif.gif" alt="Usage Gif" style="width: 25%;">
 </div>
 
 ## Feature

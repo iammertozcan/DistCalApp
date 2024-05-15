@@ -1,5 +1,11 @@
 # DistCalApp
-DistCalApp is an application used for performing long-distance computation tasks. DistCalApp is an application that allows users to calculate the distance between two different places and present the results in meters, kilometers, and miles.
+DistCalApp is an application used for performing long-distance computation tasks. DistCalApp is an application that allows users to calculate the distance between two different places and present the results in meters, kilometers, and miles. I developed this project to improve my skills in Objective-C programming.
+
+### Objectives
+- Strengthen proficiency in Objective-C programming language
+- Gain practical experience in developing iOS applications using Objective-C
+- Implement design patterns and architectural principles in Objective-C projects
+- Improve code readability, maintainability, and efficiency in Objective-C codebases
 
 ## Screenshots
 
@@ -32,4 +38,3 @@ git clone https://github.com/iammertozcan/DistCalApp.git
 
 ## Contact
 If you have any questions or feedback, please reach out to us at [iammertozcan@gmail.com](mailto:iammertozcan@gmail.com).
-## Credis

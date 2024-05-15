@@ -38,7 +38,27 @@
     
     self.req = [self.req initWithLocationDescriptions:dest sourceDescription:start];
     
-    self.calculateButton.enabled = YES;
+    __weak ViewController *weakSelf = self;
+    
+    self.req.callback = ^void(NSArray *response) {
+        ViewController *strongSelf = weakSelf;
+        if (!strongSelf) return;
+        
+        NSNull *badResult = [NSNull null];
+        
+        if (response[0] != badResult) {
+            double num = ([response[0] floatValue] / 1000.0);
+            NSString *x = [NSString stringWithFormat:@"%.2f km", num];
+            strongSelf.distanceLabel.text = x;
+        } else {
+            strongSelf.distanceLabel.text = @"Error!";
+        }
+        
+        strongSelf.req = nil;
+        strongSelf.calculateButton.enabled = YES;
+    };
+    
+    [self.req start];
 }
 
 @end

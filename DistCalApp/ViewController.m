@@ -27,6 +27,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self.unitController setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"Futura-Bold" size:14.0]} forState:UIControlStateNormal];
+
 }
 
 - (IBAction)calculateButtonTapped:(id)sender {

@@ -99,6 +99,9 @@
                                         <integer key="value" value="8"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="calculateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vpr-zt-Z8L"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -123,6 +126,12 @@
                             <constraint firstItem="BuR-gB-yxq" firstAttribute="leading" secondItem="tSC-mL-waD" secondAttribute="leading" id="xI7-OC-Ybm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="calculateButton" destination="k4Z-su-9LX" id="Fzs-b6-ufo"/>
+                        <outlet property="distanceLabel" destination="brU-Te-Tjt" id="1Ai-a2-KLc"/>
+                        <outlet property="endLocation" destination="BuR-gB-yxq" id="5x2-Ey-cyL"/>
+                        <outlet property="startLocation" destination="SFP-db-7GH" id="BbY-Kf-npY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

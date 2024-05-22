@@ -14,7 +14,7 @@ DistCalApp is an application used for performing long-distance computation tasks
     <img src="./images/usage.png" alt="Usage" style="width: 32%;">
 </div>
 
-## Feature
+## Features
 - Calculate distance between two places
 - Present distance in meters, kilometers, and miles
 - User-friendly interface

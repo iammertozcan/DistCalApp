@@ -25,9 +25,12 @@ To get started with the project, follow these steps:
 ```bash
 git clone https://github.com/iammertozcan/DistCalApp.git
 ```
-2. Open the project in your preferred IDE (e.g., Xcode).
-3. Run the `DistCalApp.xcworkspace` file.
-4. Start using the application to calculate distances!
+2. Install the required dependencies using CocoaPods. Navigate to the project directory and run:
+```bash
+pod install
+```   
+3. Open the project in your preferred IDE (e.g., Xcode) using the `DistCalApp.xcworkspace` file.
+4. Run the application and start using it to calculate distances!
 
 ## Usage
 1. Enter the name of the two places you want to calculate the distance between(e.g., Paris, Istanbul, Seattle).
@@ -54,3 +57,6 @@ git push origin feature/NewFeature
 
 ## Contact
 If you have any questions or feedback, please reach out to us at [iammertozcan@gmail.com](mailto:iammertozcan@gmail.com).
+
+## Dependencies
+This project uses the DistanceGetter pod for calculating distances. Ensure that you install the required pods by running pod install before opening the project in Xcode.
